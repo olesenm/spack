@@ -58,8 +58,8 @@ class Paraview(CMakePackage):
     variant('expat', default=False, description="Use external EXPAT")
 
     depends_on('python@2:2.8', when='+python')
-    depends_on('py-numpy', when='+python', type='run')
-    depends_on('py-matplotlib', when='+python', type='run')
+##    depends_on('py-numpy', when='+python', type='run')
+##    depends_on('py-matplotlib', when='+python', type='run')
     depends_on('mpi', when='+mpi')
     depends_on('qt+opengl', when='@5.3.0:+qt+opengl2')
     depends_on('qt~opengl', when='@5.3.0:+qt~opengl2')
